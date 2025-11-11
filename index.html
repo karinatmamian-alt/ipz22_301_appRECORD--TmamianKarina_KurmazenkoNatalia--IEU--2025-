@@ -326,7 +326,7 @@
 <!-- 🔹 ЛАБОРАТОРНА РОБОТА №2 -->
 <!-- ===================================== -->
 <hr>
-<h2 id="lab2">Лабораторна робота №2</h2>
+
 
 <section>
   <h3>Тема:</h3>
@@ -477,17 +477,223 @@ table, th, td {
 
     <div id="lab3" class="lab-content">
         <h2>Лабораторна робота №3</h2>
-        <p>Тут буде звіт для третьої лабораторної роботи.</p>
+        <p><section id="lab3">
+  
+  <h3>Тема:</h3>
+  <p>Верстка HTML-документу. Верстка засобами CSS та Flexbox.</p>
+
+  <h3>Мета:</h3>
+  <p>Придбати практичні навички створення адаптивної верстки за допомогою технології <b>Flexbox</b>.</p>
+
+  <h3>Завдання:</h3>
+  <p>Реалізувати сторінку веб-застосунку “Кінотеатр Онлайн” із двоколонковим макетом (панель новин та основний контент) засобами CSS Flexbox. Додати адаптивність та стилізацію елементів сторінки.</p>
+
+  <h3>HTML-код:</h3>
+  <pre><code>
+&lt;section id="lab3"&gt;
+  &lt;h2&gt;Лабораторна робота №3 — Верстка Flexbox&lt;/h2&gt;
+
+  &lt;div class="flex-container"&gt;
+    &lt;aside class="sidebar"&gt;
+      &lt;h3&gt;Новини кіно&lt;/h3&gt;
+      &lt;p&gt;🎬 Прем’єра “Дюна 3” вже цього тижня!&lt;/p&gt;
+      &lt;p&gt;🍿 Знижка 30% на ранкові сеанси.&lt;/p&gt;
+    &lt;/aside&gt;
+
+    &lt;div class="content"&gt;
+      &lt;h3&gt;Афіша фільмів&lt;/h3&gt;
+      &lt;div class="posters"&gt;
+        &lt;img src="https://avatars.mds.yandex.net/get-kinopoisk-image/9784475/0c67265b-6631-4e25-b89c-3ddf4e5a1ee7/600x900" alt="Dune 2"&gt;
+        &lt;img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/Inside_Out_2_poster.jpg/250px-Inside_Out_2_poster.jpg" alt="Inside Out 2"&gt;
+        &lt;img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/Avatar_The_Way_of_Water_poster.jpg/220px-Avatar_The_Way_of_Water_poster.jpg" alt="Avatar 2"&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+  </code></pre>
+
+  <h3>CSS-код:</h3>
+  <pre><code>
+/* ===== ЛАБОРАТОРНА №3: FLEXBOX ===== */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+.sidebar {
+  flex: 1 1 250px;
+  background-color: #fff7f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.sidebar h3 {
+  color: #d42;
+}
+
+.content {
+  flex: 3 1 600px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.posters {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.posters img {
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.posters img:hover {
+  transform: scale(1.05);
+}
+  </code></pre>
+
+  <h3>Теорія:</h3>
+  <p><b>Flexbox</b> — це сучасна технологія CSS для побудови гнучких макетів. Вона дозволяє легко розташовувати елементи у ряд чи стовпчик, рівномірно розподіляти простір і адаптувати сайт під різні екрани.</p>
+  <ul>
+    <li><code>display: flex;</code> — вмикає режим flex-контейнера;</li>
+    <li><code>flex-wrap: wrap;</code> — дозволяє елементам переноситися на новий ряд;</li>
+    <li><code>justify-content:</code> — вирівнювання елементів по горизонталі;</li>
+    <li><code>align-items:</code> — вирівнювання по вертикалі;</li>
+    <li><code>flex: 1 1 auto;</code> — керує шириною та адаптивністю елементів.</li>
+  </ul>
+
+  <h3>Скріншот результату:</h3>
+  <img src="screenshot/photo_2025-11-11_09-20-57.jpg" alt="Результат Лабораторної №3" width="600">
+
+  <h3>Висновки:</h3>
+  <p>Під час виконання лабораторної роботи №3 ми навчились створювати двоколонкову адаптивну верстку за допомогою <b>Flexbox</b>, 
+  стилізувати контент сторінки засобами CSS, використовувати властивості <code>flex</code>, <code>justify-content</code>, <code>flex-wrap</code> 
+  та оформлювати макет у сучасному стилі для веб-застосунку “Кінотеатр Онлайн”.</p>
+</section>
+</p>
     </div>
 
     <div id="lab4" class="lab-content">
         <h2>Лабораторна робота №4</h2>
-        <p>Тут буде звіт для четвертої лабораторної роботи.</p>
+        <p><section id="adaptive-demo" style="background:#fff; border-radius:16px; padding:30px 40px; box-shadow:0 4px 15px rgba(0,0,0,0.1); margin-top:40px;">
+  <h2 style="color:#0078d7; text-align:center;">Демонстрація адаптивної верстки</h2>
+
+  <p>Нижче представлено приклад реалізації адаптивного веб-дизайну сайту <b>“Movie Time”</b>, 
+     який коректно відображається на десктопах, планшетах та мобільних пристроях.
+     Для адаптації використано медіа-запити, метатег <code>viewport</code> та підхід <b>Mobile First</b>.</p>
+
+  <pre><code>
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+
+&lt;div class="container"&gt;
+  &lt;header&gt;Movie Time – адаптивний сайт&lt;/header&gt;
+  &lt;main&gt;
+    &lt;section class="poster"&gt;
+      &lt;img src="https://upload.wikimedia.org/wikipedia/en/f/f7/Inside_Out_2_poster.jpg" alt="Фільм"&gt;
+      &lt;h3&gt;Inside Out 2&lt;/h3&gt;
+      &lt;p&gt;Психологічна пригода для всієї родини&lt;/p&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;&copy; 2025 MovieTime&lt;/footer&gt;
+&lt;/div&gt;
+  </code></pre>
+
+  <p><b>Базові стилі (для десктопа):</b></p>
+  <pre><code>
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+.poster {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.poster img {
+  width: 300px;
+  border-radius: 10px;
+}
+  </code></pre>
+
+  <p><b>Адаптивні стилі (медіа-запити):</b></p>
+  <pre><code>
+/* Планшетна версія (до 900px) */
+@media (max-width: 900px) {
+  .poster {
+    flex-direction: column;
+    align-items: center;
+  }
+  .poster img {
+    width: 250px;
+  }
+}
+
+/* Мобільна версія (до 600px) */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    background-color: #fffefc;
+  }
+  .poster img {
+    width: 200px;
+  }
+  header {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+  </code></pre>
+
+  
+
+  <p style="margin-top:25px;"><b>Висновок:</b> сайт <b>“Movie Time”</b> коректно масштабується та зручно переглядається 
+     на всіх пристроях завдяки використанню медіа-запитів та метатегу viewport.</p>
+</section>
+</p>
     </div>
 
     <div id="lab5" class="lab-content">
         <h2>Лабораторна робота №5</h2>
-        <p>Тут буде звіт для п’ятої лабораторної роботи.</p>
+        <p><section id="lab5-info" style="background:#fff; border-radius:16px; padding:30px 40px; box-shadow:0 4px 15px rgba(0,0,0,0.1); margin-bottom:30px;">
+  <h2 style="color:#0078d7; text-align:center;">Лабораторна робота №5</h2>
+  <h3>Тема:</h3>
+  <p><b>Функціональне застосування JavaScript у HTML-документі. Використання масивів у JS-сценаріях.</b></p>
+
+  <h3>Мета:</h3>
+  <p>Придбати практичні навички роботи з конструкціями мови JavaScript, масивами та функціями у JS-сценаріях. Реалізувати інтерактивну програму засобами JavaScript.</p>
+
+  <h3>Посилання:</h3>
+  <ul style="list-style-type: square; line-height:1.8;">
+    <li>
+      Репозиторій власного WEB-застосунку:  
+      <a href="https://github.com/yourusername/movie-time" target="_blank">https://github.com/yourusername/movie-time</a>
+    </li>
+    <li>
+      Жива сторінка власного WEB-застосунку:  
+      <a href="https://yourusername.github.io/movie-time/" target="_blank">https://yourusername.github.io/movie-time/</a>
+    </li>
+    <li>
+      Репозиторій звітного HTML-документу:  
+      <a href="https://github.com/yourusername/lab5-report" target="_blank">https://github.com/yourusername/lab5-report</a>
+    </li>
+    <li>
+      Жива сторінка звітного HTML-документу:  
+      <a href="https://yourusername.github.io/lab5-report/" target="_blank">https://yourusername.github.io/lab5-report/</a>
+    </li>
+  </ul>
+</section>
+</p>
     </div>
 
     <!-- 🔹 Скрипт перемикання вкладок -->
