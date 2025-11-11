@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звіт лабораторних робіт Тмаміан Каріни та Курмазенко Наталії</title>
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background-color: #f9f9f9;
+            color: #222;
+            margin: 40px;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        a {
+            color: #0078d7;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        pre {
+            background: #eef2f3;
+            border-left: 4px solid #0078d7;
+            padding: 10px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+
+        img {
+            display: block;
+            margin: 10px 0 20px 0;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #ddd;
+            margin: 30px 0;
+        }
+
+        .links ul {
+            margin: 0;
+        }
+
+        .links li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Звіт лабораторних робіт</h1>
+    <h2>Лабораторна робота №1</h2>
+
+    <section>
+        <h3>Тема:</h3>
+        <p>HTML-документ. Семантична розмітка. GitHub. Робота з репозиторіями. Опис бізнес-логіки власного веб-застосунку.</p>
+
+        <h3>Мета:</h3>
+        <p>Набути навичок роботи з HTML, GitHub і створенням веб-документів.</p>
+
+        <h3>Місце розташування:</h3>
+        <div class="links">
+            <ul>
+                <li><b>WEB-застосунок:</b> 
+                    <a href="https://github.com/karinatmamian-alt/ipz22_301-appWEB-TmamianKarina-KurmazenkoNataliia-MEU-2025-/tree/main" target="_blank">Перейти</a></li>
+                <li><b>Звітний документ:</b> 
+                    <a href="https://karinatmamian-alt.github.io/ipz22_301_appRECORD--TmamianKarina_KurmazenkoNatalia--IEU--2025-/" target="_blank">Перейти</a></li>
+                <li><b>Самостійні роботи:</b> 
+                    <a href="https://karinatmamian-alt.github.io/-IPZ-22-301_-INDEPENDENT--TmamianKarina_NataliaKurmazenko--IEU--2025-/" target="_blank">Перейти</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Опис предметного середовища</h2>
+        <p><b>Вебзастосунок “MovieTime”</b> — це сучасна онлайн-платформа для перегляду афіші та бронювання квитків у кінотеатрі.
+        Метою створення цього ресурсу є спрощення процесу купівлі квитків: користувач може обрати фільм, дату, час сеансу та місце без необхідності відвідувати касу.</p>
+        <p>Інтерфейс сайту створено у зручному мінімалістичному стилі. Користувач бачить список актуальних фільмів, може переглянути деталі, а потім швидко забронювати квиток.</p>
+        <ul>
+            <li>Відображення поточних фільмів та сеансів</li>
+            <li>Форма для бронювання місця</li>
+            <li>Підтвердження замовлення квитка</li>
+            <li>Зворотний зв’язок через форму або email</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Структура головної сторінки веб-застосунку</h2>
+        <p>Головна сторінка складається з кількох елементів: заголовка, меню, таблиці з даними, зображення та списків. Нижче наведено приклади коду та скріншоти.</p>
+
+        <h3>HTML-код таблиці:<h3>Код таблиці</h3>
+<pre>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Фільм&lt;/th&gt;
+    &lt;th&gt;Час сеансу&lt;/th&gt;
+    &lt;th&gt;Ціна&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Dune 2&lt;/td&gt;
+    &lt;td&gt;18:00&lt;/td&gt;
+    &lt;td&gt;250 грн&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Inside Out 2&lt;/td&gt;
+    &lt;td&gt;20:30&lt;/td&gt;
+    &lt;td&gt;220 грн&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+
+
+
+        <h3>Скріншот таблиці:</h3>
+        <img src="screenshot/photo_2025-11-11_05-05-16.jpg" alt="Скріншот таблиці" width="400">
+
+        <h3>Теорія:</h3>
+        <p>Для створення таблиць використовуються теги:
+        <code>&lt;table&gt;</code> — створює таблицю, 
+        <code>&lt;tr&gt;</code> — рядок, 
+        <code>&lt;th&gt;</code> — заголовок стовпця, 
+        <code>&lt;td&gt;</code> — комірка таблиці.  
+        Основні атрибути: <b>border</b> (рамка), <b>cellpadding</b> (відступ усередині комірки), <b>cellspacing</b> (відстань між комірками), <b>width</b> та <b>align</b>.</p>
+
+        <hr>
+
+        <h3>HTML-код зображення:</h3>
+        <pre>
+            
+<pre><code>
+&lt;div class="posters"&gt;
+  &lt;img src="https://avatars.mds.yandex.net/get-kinopoisk-image/9784475/0c67265b-6631-4e25-b89c-3ddf4e5a1ee7/600x900" alt="Dune 2"&gt;
+  &lt;img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/Inside_Out_2_poster.jpg/250px-Inside_Out_2_poster.jpg" alt="Inside Out 2"&gt;
+&lt;/div&gt;
+</code></pre>
+
+        </pre>
+
+        <h3>Скріншот зображення:</h3>
+        <img src="screenshot/photo_2025-11-11_05-24-28.jpg" alt="Скріншот зображення" width="400">
+
+        <p><b>Теорія:</b> Тег <code>&lt;img&gt;</code> використовується для вставки зображень у вебсторінку.
+        Основні атрибути:
+        <b>src</b> — шлях до зображення,
+        <b>alt</b> — текстовий опис для випадку, якщо зображення не відображається,
+        <b>width</b> і <b>height</b> — розміри.</p>
+
+        <hr>
+
+        <h3>HTML-код списків:</h3>
+        <pre><code>
+&lt;h3&gt;Меню сайту&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Головна&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Афіша&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Контакти&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+
+        <h3>Скріншот списків:</h3>
+        <img src="screenshot/photo_2025-11-11_05-36-23.jpg" alt="Скріншот списків" width="400">
+
+        <p><b>Теорія:</b> Для створення списків використовуються теги:
+         <code>&lt;ul&gt;</code> — ненумерований список, 
+        <code>&lt;ol&gt;</code> — нумерований список, 
+        <code>&lt;li&gt;</code> — елемент списку.  
+      Атрибут <b>type</b> дозволяє змінювати стиль маркування (кружки, цифри, букви тощо).
+</p>
+
+    <section>
+        <h2>Висновки</h2>
+        <p>Під час виконання лабораторної роботи ми закріпили знання з HTML, створили базову структуру веб-документа, навчилися оформлювати таблиці, вставляти зображення та працювати зі списками. Також отримали навички розміщення проєкту на GitHub Pages.</p>
+    </section>
+</body>
+</html>
